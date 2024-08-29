@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9x-Cq-DfJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScreenMirroring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYR-6P-rsY">
+                                <rect key="frame" x="152.5" y="138" width="109" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="MRD-du-gja"/>
+                                    <constraint firstAttribute="height" constant="31" id="NBv-Ps-626"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Local Images"/>
+                                <connections>
+                                    <action selector="debugAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p8n-aO-LWf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVM-0f-bHa">
+                                <rect key="frame" x="149" y="213" width="116" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Zu6-yG-SI1"/>
+                                    <constraint firstAttribute="width" constant="116" id="iXF-JH-94B"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Online Images"/>
+                                <connections>
+                                    <action selector="debugAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SC8-FW-fOi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgW-qA-yxU">
+                                <rect key="frame" x="153.5" y="296" width="107" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="fAi-lj-078"/>
+                                    <constraint firstAttribute="height" constant="31" id="sYP-Gp-SkY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Local Videos"/>
+                                <connections>
+                                    <action selector="debugAction3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0p-eZ-maa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qz3-f8-6hr">
+                                <rect key="frame" x="150" y="387" width="114" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="GJ1-sT-0Pq"/>
+                                    <constraint firstAttribute="height" constant="31" id="Vlf-jp-34n"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Online Videos"/>
+                                <connections>
+                                    <action selector="debugAction4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P2r-Kv-IdG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DO-NU-o82">
+                                <rect key="frame" x="141" y="480" width="132" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="7NX-p8-Ubv"/>
+                                    <constraint firstAttribute="width" constant="132" id="oUW-WR-q8r"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Screen Mirroring"/>
+                                <connections>
+                                    <action selector="debugAction5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsf-Na-oUo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZL-jV-2ph">
+                                <rect key="frame" x="173.5" y="599" width="67" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="YEn-SF-ycv"/>
+                                    <constraint firstAttribute="height" constant="31" id="pqg-sw-PHE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="showAirPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awC-yK-cmM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AgW-qA-yxU" firstAttribute="top" secondItem="HVM-0f-bHa" secondAttribute="bottom" constant="52" id="4j4-YU-4Fa"/>
+                            <constraint firstItem="nZL-jV-2ph" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4wg-R1-Ydg"/>
+                            <constraint firstItem="0DO-NU-o82" firstAttribute="top" secondItem="qz3-f8-6hr" secondAttribute="bottom" constant="62" id="7He-h4-bUe"/>
+                            <constraint firstItem="qz3-f8-6hr" firstAttribute="top" secondItem="AgW-qA-yxU" secondAttribute="bottom" constant="60" id="F60-4F-3fG"/>
+                            <constraint firstItem="HVM-0f-bHa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KUl-0a-9sU"/>
+                            <constraint firstItem="0DO-NU-o82" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KeN-9O-aNq"/>
+                            <constraint firstItem="AgW-qA-yxU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kv0-cl-4fK"/>
+                            <constraint firstItem="OYR-6P-rsY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Mdg-FK-Zh5"/>
+                            <constraint firstItem="HVM-0f-bHa" firstAttribute="top" secondItem="OYR-6P-rsY" secondAttribute="bottom" constant="44" id="WB3-KQ-PHp"/>
+                            <constraint firstItem="OYR-6P-rsY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xo0-i6-ONx"/>
+                            <constraint firstItem="qz3-f8-6hr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tX4-W2-DSy"/>
+                            <constraint firstItem="nZL-jV-2ph" firstAttribute="top" secondItem="0DO-NU-o82" secondAttribute="bottom" constant="88" id="wSA-sD-fkK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UtA-CA-AZ0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="45.535714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N4f-cP-CKu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X9x-Cq-DfJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sII-Hx-mjF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DrC-49-A0d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uFF-YL-z9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="45.535714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

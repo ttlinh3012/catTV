@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iosVideoScreen" customModule="ScreenMirroring" customModuleProvider="target">
+            <connections>
+                <outlet property="homeButton" destination="TqP-f8-TuS" id="Gd8-oj-baF"/>
+                <outlet property="nextButton" destination="UTP-2o-bnX" id="X5t-oU-RMI"/>
+                <outlet property="playPauseButton" destination="yKO-kQ-efk" id="jaN-u4-yo6"/>
+                <outlet property="previousButton" destination="qHp-6w-OtU" id="IMb-Pi-qXJ"/>
+                <outlet property="skipAheadButton" destination="SW3-qe-XXu" id="2Pp-fZ-5cw"/>
+                <outlet property="skipBackButton" destination="lzn-Ws-0DA" id="EWX-vc-xrT"/>
+                <outlet property="videoView" destination="aT8-0g-KFx" id="B7f-zV-p68"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKO-kQ-efk">
+                    <rect key="frame" x="181.5" y="577" width="51" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                    <connections>
+                        <action selector="playPauseButtonPressed:" destination="-1" eventType="touchUpInside" id="qZl-8L-uxf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzn-Ws-0DA">
+                    <rect key="frame" x="87" y="577" width="87" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Skip back"/>
+                    <connections>
+                        <action selector="skipBackButtonPressed:" destination="-1" eventType="touchUpInside" id="J8L-Pw-11P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW3-qe-XXu">
+                    <rect key="frame" x="241" y="577" width="96" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Skip ahead"/>
+                    <connections>
+                        <action selector="skipAheadButtonPressed:" destination="-1" eventType="touchUpInside" id="Mn7-y0-E8c"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHp-6w-OtU">
+                    <rect key="frame" x="-1" y="577" width="80" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Previous"/>
+                    <connections>
+                        <action selector="previousButtonPressed:" destination="-1" eventType="touchUpInside" id="Opq-AZ-2jh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTP-2o-bnX">
+                    <rect key="frame" x="345" y="577" width="54" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                    <connections>
+                        <action selector="nextButtonPressed:" destination="-1" eventType="touchUpInside" id="lTc-yk-A6D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqP-f8-TuS">
+                    <rect key="frame" x="175.5" y="768" width="63" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                    <connections>
+                        <action selector="homeButtonPressed:" destination="-1" eventType="touchUpInside" id="4B6-ww-NRZ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aT8-0g-KFx">
+                    <rect key="frame" x="0.0" y="44" width="414" height="494"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TqP-f8-TuS" firstAttribute="top" secondItem="yKO-kQ-efk" secondAttribute="bottom" constant="160" id="1Aw-5c-tur"/>
+                <constraint firstItem="yKO-kQ-efk" firstAttribute="top" secondItem="aT8-0g-KFx" secondAttribute="bottom" constant="39" id="8z9-Tm-LrW"/>
+                <constraint firstItem="aT8-0g-KFx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AZu-vW-OrI"/>
+                <constraint firstItem="yKO-kQ-efk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WaQ-Pe-Web"/>
+                <constraint firstItem="aT8-0g-KFx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hMk-MH-VwO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TqP-f8-TuS" secondAttribute="bottom" constant="63" id="hay-Ok-wje"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aT8-0g-KFx" secondAttribute="trailing" id="qra-0L-mE7"/>
+                <constraint firstItem="TqP-f8-TuS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yN9-s8-QoD"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
